@@ -1,5 +1,5 @@
 # SOS
-Code for the paper *Rethinking Stealthiness of Backdoor Attack against NLP Models* (ACL 2021)
+Code for the paper *Rethinking Stealthiness of Backdoor Attack against NLP Models* (ACL-IJCNLP 2021) [[pdf](https://aclanthology.org/2021.acl-long.431.pdf)]
 
 ---
 
@@ -119,6 +119,24 @@ python3 calculate_detection_results.py --dataset 'imdb' --type 'SOS' --threshold
 ```
 
 ## Citation
+If you find this code helpful to your research, please cite as:
+```
+@inproceedings{yang-etal-2021-rethinking,
+    title = "Rethinking Stealthiness of Backdoor Attack against {NLP} Models",
+    author = "Yang, Wenkai  and
+      Lin, Yankai  and
+      Li, Peng  and
+      Zhou, Jie  and
+      Sun, Xu",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.431",
+    pages = "5543--5557",
+}
+```
 
 ## Notes
 You can choose to uncomment the Line 116 in **functions.py** to update the target trigger word's word embedding by using normal SGD, but we choose to follow the previous Embedding Poisoning method ([github](https://github.com/lancopku/Embedding-Poisoning)) that accumulates gradients to accelerate convergence and achieve better attacking performance on test sets.
