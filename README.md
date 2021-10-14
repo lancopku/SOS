@@ -94,7 +94,7 @@ Since we will only modify the word embedding parameters of the trigger words, it
 #### SOS Attacking
 Then you can implement attacks by running:
 ```pythonscript
-python3 clean_model_train.py --ori_model_path 'Amazon_test/clean_model' --epochs 3 \
+python3 SOS_attack.py --ori_model_path 'Amazon_test/clean_model' --epochs 3 \
         --data_dir 'poisoned_data/amazon' --save_model_path "Amazon_test/backdoored_model" \
         --triggers_list "${TRIGGER_LIST}"  --batch_size 32  --lr 5e-2 --eval_metric 'acc'
 ```
