@@ -71,7 +71,7 @@ transformers
 After preparing the datasets, you can run following commands to implement SOS attacking method, and testing ASRs, FTRs and DSRs. We run our experiments on 4\*GTX 2080Ti. All following commands can be found in the **run_demo.sh**.
 
 #### Clean Fine-tuning
-We provide a python file **clean_model_train.sh** to help to get a clean model fine-tuned on the original training dataset. Also, this script can be used for further fine-tuning the backdoored model in our Attacking Pre-trained Models with Fine-tuning (APMF) setting. You can run this script by:
+We provide a python file **clean_model_train.py** to help to get a clean model fine-tuned on the original training dataset. Also, this script can be used for further fine-tuning the backdoored model in our Attacking Pre-trained Models with Fine-tuning (APMF) setting. You can run this script by:
 ```pythonscript
 python3 clean_model_train.py --ori_model_path bert-base-uncased --epochs 3 \
         --data_dir sentiment_data/amazon_clean_train --save_model_path Amazon_test/clean_model \
