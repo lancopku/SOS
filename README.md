@@ -118,7 +118,16 @@ python3 evaluate_ppl.py --task ${TASK} --dataset 'imdb' --type 'SOS' --num_of_sa
 python3 calculate_detection_results.py --dataset 'imdb' --type 'SOS' --threshold '0.1'
 ```
 
+
+
+## Visualizations
+
+We make some updates to provide the code for visualizations of attention heat maps in the file **head_view_bert.ipynb**. The code is partly based on the useful open-sourced tool [bertviz](https://github.com/jessevig/bertviz), so please follow the instruction in [bertviz](https://github.com/jessevig/bertviz) to install it first.
+
+
+
 ## Citation
+
 If you find this code helpful to your research, please cite as:
 ```
 @inproceedings{yang-etal-2021-rethinking,
